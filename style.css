@@ -55,7 +55,7 @@ button{
     background-color: white;
     
 }
-@media screen and (max-width: 1200px){
+@media only screen and (max-width: 1200px){
     .input-container{
         margin-right: 2.5rem;
         font-size: 1.5vw;
@@ -75,7 +75,7 @@ button{
         
     }
 }
-@media screen and (max-width: 800px){
+@media only screen and (max-width: 800px){
     .input-container{
         margin-right: 2.5rem;
         font-size: 2vw;
@@ -95,7 +95,7 @@ button{
         
     }
 }
-@media screen and (max-width: 570px){
+@media only screen and (max-width: 570px){
     main > span{
         font-size: 20vw;
         color: var(--cor3);
