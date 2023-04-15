@@ -96,21 +96,37 @@ button{
     }
 }
 @media screen and (max-width: 570px){
+    main > span{
+        font-size: 20vw;
+        color: var(--cor3);
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+        
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+    }
     .input-container{
         margin-right: 2.5rem;
-        font-size: 2.5vw;
+        font-size: 4vw;
     }
     .input-container > input {
         border-style: none;
         padding: 0.3vw 0vw 0vw 0.3vw;
         text-align: justify;
-        height: 1.7vw;
+        height: 5vw;
+        margin-bottom: 1em;
     }
     button{
         font-family: var(--fontFamily);
-        font-size: 1.5vw;
+        font-size: 3vw;
         border-style: none;
-        padding: 1.5em 2.5em;
+        padding: 1em 2em;
         background-color: white;
         
     }
