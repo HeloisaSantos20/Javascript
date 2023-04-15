@@ -55,3 +55,63 @@ button{
     background-color: white;
     
 }
+@media screen and (max-width: 1200px){
+    .input-container{
+        margin-right: 2.5rem;
+        font-size: 1.5vw;
+    }
+    .input-container > input {
+        border-style: none;
+        padding: 0.3vw 0vw 0vw 0.3vw;
+        text-align: justify;
+        height: 1.3vw;
+    }
+    button{
+        font-family: var(--fontFamily);
+        font-size: 1vw;
+        border-style: none;
+        padding: 1em 2em;
+        background-color: white;
+        
+    }
+}
+@media screen and (max-width: 800px){
+    .input-container{
+        margin-right: 2.5rem;
+        font-size: 2vw;
+    }
+    .input-container > input {
+        border-style: none;
+        padding: 0.3vw 0vw 0vw 0.3vw;
+        text-align: justify;
+        height: 1.5vw;
+    }
+    button{
+        font-family: var(--fontFamily);
+        font-size: 1.2vw;
+        border-style: none;
+        padding: 1.2em 2.2em;
+        background-color: white;
+        
+    }
+}
+@media screen and (max-width: 570px){
+    .input-container{
+        margin-right: 2.5rem;
+        font-size: 2.5vw;
+    }
+    .input-container > input {
+        border-style: none;
+        padding: 0.3vw 0vw 0vw 0.3vw;
+        text-align: justify;
+        height: 1.7vw;
+    }
+    button{
+        font-family: var(--fontFamily);
+        font-size: 1.5vw;
+        border-style: none;
+        padding: 1.5em 2.5em;
+        background-color: white;
+        
+    }
+}
