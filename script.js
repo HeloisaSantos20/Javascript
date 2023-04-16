@@ -1,15 +1,21 @@
+const hours = document.getElementById('hour');
+const minutes = document.getElementById('minutes');
+const seconds = document.getElementById('seconds');
 const btnStart = document.getElementById('btn');
+const btnReset = document.getElementById('btn-reset');
+const display = document.getElementById('display');
+let isTimerRunning = false;
+let interval;
 
 btnStart.addEventListener('click', () => {
-  const hours = document.getElementById('hour');
-  const minutes = document.getElementById('minutes');
-  const seconds = document.getElementById('seconds');
-
-  let duration = (parseInt(hours.value) * 60 * 60) + (parseInt(minutes.value) * 60) + parseInt(seconds.value);
-
-  display = document.getElementById('display');
-  timer(duration, display);
+  // verifica se o timer está acionado, protege contra duplo clique
+  if (!isTimerRunning) {
+    let duration = (parseInt(hours.value) * 60 * 60) + (parseInt(minutes.value) * 60) + parseInt(seconds.value);
+    timer(duration, display);
+    isTimerRunning = true;
+  }
 })
+
 
 const timer = (duration, display) => {
   let timer = duration;
@@ -31,8 +37,9 @@ const timer = (duration, display) => {
     timer -= 1;
 
     if(timer < 0){
-      display.innerHTML = 'ACABOU!!!';
+      display.innerHTML = 'FIM';
       clearInterval(interval);
+      isTimerRunning = false;
     }
   }, 1000);
 }
